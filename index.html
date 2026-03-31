@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>AROMA. — Specialty Coffee</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="/img/favicon.png" type="image/png">
+</head>
+<body>
+
+  <!-- =============================================
+       CUSTOM CURSOR (только desktop)
+  ============================================= -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- =============================================
+       HEADER
+  ============================================= -->
+  <header class="header" id="header">
+    <a href="#" class="header__logo">AROMA<span>.</span></a>
+
+    <!-- Десктопная навигация -->
+    <nav class="header__nav">
+      <a href="#">Главная</a>
+      <a href="#about">О нас</a>
+      <a href="#gallery">Галерея</a>
+      <a href="#menu">Меню</a>
+      <a href="#contacts-section">Контакты</a>
+    </nav>
+
+    <!-- Кнопка бургера (мобайл) -->
+    <button class="burger" id="burger" aria-label="Открыть меню">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- Мобильное меню -->
+  <div class="mobile-menu" id="mobileMenu">
+    <nav>
+      <a href="#" id="mobileClose">Главная</a>
+      <a href="#about" class="mobile-link">О нас</a>
+      <a href="#gallery" class="mobile-link">Галерея</a>
+      <a href="#menu" class="mobile-link">Меню</a>
+      <a href="#contacts-section" class="mobile-link">Контакты</a>
+    </nav>
+  </div>
+
+  <!-- =============================================
+       HERO SECTION — СЛАЙДЕР
+  ============================================= -->
+  <section class="hero" id="hero">
+    <div class="hero__slides">
+
+      <!-- Слайд 1 -->
+      <div class="hero__slide active">
+        <img class="hero__slide-img"
+          src="img/022_image.jpg"
+          alt="Уютный интерьер кофейни" />
+        <img class="hero__slide-img-mobile"
+          src="img/m-1slide.png"
+          alt="Уютный интерьер кофейни" />
+        <div class="hero__content">
+          <p class="hero__eyebrow">Specialty Coffee · Amsterdam</p>
+          <h1 class="hero__title">
+            Каждый глоток —<br>
+            <em>история</em> вкуса
+          </h1>
+          <p class="hero__subtitle">
+            Мы отбираем лучшие зёрна с четырёх континентов, чтобы вы могли ощутить настоящий характер кофе.
+          </p>
+          <div class="hero__actions">
+            <a href="#menu" class="btn-primary">
+              <span>Смотреть меню</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="#about" class="btn-outline">О нас</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Слайд 2 -->
+      <div class="hero__slide">
+        <img class="hero__slide-img"
+          src="img/002_image.png"
+          alt="Эспрессо крупным планом" />
+        <img class="hero__slide-img-mobile"
+          src="img/m-2slide.png"
+          alt="Эспрессо крупным планом" />
+        <div class="hero__content">
+          <p class="hero__eyebrow">Single Origin · Specialty</p>
+          <h1 class="hero__title">
+            Идеальный<br>
+            <em>эспрессо</em> каждый раз
+          </h1>
+          <p class="hero__subtitle">
+            30+ сортов зерна из Эфиопии, Колумбии и Кении. Бариста с международной сертификацией SCA.
+          </p>
+          <div class="hero__actions">
+            <a href="#menu" class="btn-primary">
+              <span>Наше меню</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="#gallery" class="btn-outline">Галерея</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Слайд 3 -->
+      <div class="hero__slide">
+        <img class="hero__slide-img"
+          src="img/003_image.jpg"
+          alt="Кофе с молочной пенкой" />
+        <img class="hero__slide-img-mobile"
+          src="img/m-3slide.png"
+          alt="Кофе с молочной пенкой" />
+        <div class="hero__content">
+          <p class="hero__eyebrow">Crafted with Passion</p>
+          <h1 class="hero__title">
+            Атмосфера,<br>
+            <em>созданная</em> для вас
+          </h1>
+          <p class="hero__subtitle">
+            Тихий уголок в центре города. Приходите работать, встречаться с друзьями или просто побыть наедине с собой.
+          </p>
+          <div class="hero__actions">
+            <a href="#contact" class="btn-primary">
+              <span>Найти нас</span>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+            <a href="#bonus" class="btn-outline">Бонусы</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Кнопка переключения с SVG-прогресс-кольцом -->
+    <div class="hero__nav">
+      <div class="hero__counter">
+        <strong id="counterCurrent">01</strong> / <span id="counterTotal">03</span>
+      </div>
+      <button class="slide-btn" id="slideBtn" aria-label="Следующий слайд">
+        <!-- SVG кольцо прогресса -->
+        <svg class="slide-btn__ring" width="64" height="64" viewBox="0 0 64 64" id="ringsvg">
+          <circle class="ring-bg" cx="32" cy="32" r="28" />
+          <circle class="ring-progress" cx="32" cy="32" r="28" id="ringProgress" />
+        </svg>
+        <!-- Стрелка (отдельный элемент, без rotate) -->
+        <svg class="slide-btn__arrow" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 10h12M10 5l5 5-5 5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- =============================================
+       ABOUT SECTION
+  ============================================= -->
+  <section class="section about" id="about">
+    <div class="about__text-col">
+      <span class="section__eyebrow reveal">О нас</span>
+      <h2 class="section__title reveal reveal-delay-1">
+        Кофе — это не просто <em>напиток</em>
+      </h2>
+      <p class="about__lead reveal reveal-delay-2">
+        AROMA. — это место, где встречаются традиция и инновация. Мы верим, что великий кофе начинается задолго до чашки.
+      </p>
+      <p class="about__body reveal reveal-delay-3">
+        С 2016 года мы вдохновляем каждого гостя с первого глотка. За 10 лет опыта мы не просто варим кофе — мы создаём моменты: тёплые утра, продуктивные дни и уютные вечера. В нашей кофейне вы найдёте более 30 сортов кофе из лучших плантаций мира — от светлых ароматных светлых ростов до насыщенных темных экстрактов. Каждый год нас посещают более 12 000 гостей, и каждый из них уходит с улыбкой — и, часто, с новой любимой чашкой в руках.
+
+<br>Здесь кофе — не напиток, а искусство. Присоединяйтесь к нам.
+      </p>
+      <div class="about__stats reveal reveal-delay-4">
+        <div>
+          <div class="about__stat-num">10</div>
+          <div class="about__stat-label">Лет опыта</div>
+        </div>
+        <div>
+          <div class="about__stat-num">30+</div>
+          <div class="about__stat-label">Сортов кофе</div>
+        </div>
+        <div>
+          <div class="about__stat-num">12k</div>
+          <div class="about__stat-label">Гостей в год</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about__img-col reveal">
+      <div class="about__img-wrap">
+        <img
+          src="img/004_image.jpg"
+          alt="Интерьер кофейни AROMA"
+          loading="lazy" />
+        <div class="about__badge">Specialty Coffee</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =============================================
+       GALLERY SECTION
+  ============================================= -->
+  <section class="gallery" id="gallery">
+    <div class="gallery__header">
+      <div>
+        <span class="section__eyebrow reveal">Атмосфера</span>
+        <h2 class="section__title reveal reveal-delay-1" style="margin-bottom:0">
+          Наше <em>пространство</em>
+        </h2>
+      </div>
+    </div>
+
+    <!-- Горизонтальная лента с дублированием для бесконечности -->
+    <div class="gallery__track" id="galleryTrack">
+      <!-- Первый набор -->
+      <div class="gallery__item">
+        <img src="img/005_image.png" alt="Кофе" loading="lazy" />
+      </div>
+      <div class="gallery__item">
+        <img src="img/006_image.png" alt="Эспрессо" loading="lazy" />
+      </div>
+      <div class="gallery__item">
+        <img src="img/007_image.png" alt="Кофейня" loading="lazy" />
+      </div>
+      <div class="gallery__item">
+        <img src="img/008_image.png" alt="Капучино" loading="lazy" />
+      </div>
+      <div class="gallery__item">
+        <img src="img/010_image.png" alt="Латте" loading="lazy" />
+      </div>
+      <div class="gallery__item">
+        <img src="img/011_image.jpg" alt="Бариста" loading="lazy" />
+      </div>
+      <div class="gallery__item">
+        <img src="img/0100_image.png" alt="Кофе" loading="lazy" />
+      </div>
+      <div class="gallery__item">
+        <img src="img/006_image.png" alt="Зёрна" loading="lazy" />
+      </div>
+      <!-- Дубликат для плавной бесконечности -->
+      <div class="gallery__item">
+        <img src="img/005_image.jpg" alt="Кофе" loading="lazy" />
+      </div>
+      <div class="gallery__item">
+        <img src="img/006_image.png" alt="Эспрессо" loading="lazy" />
+      </div>
+      <div class="gallery__item">
+        <img src="img/007_image.png" alt="Кофейня" loading="lazy" />
+      </div>
+      <div class="gallery__item">
+        <img src="img/0088_image.png" alt="Капучино" loading="lazy" />
+      </div>
+      <div class="gallery__item">
+        <img src="img/0100_image.png" alt="Латте" loading="lazy" />
+      </div>
+      <div class="gallery__item">
+        <img src="img/011_image.jpg" alt="Бариста" loading="lazy" />
+      </div>
+      <div class="gallery__item">
+        <img src="img/012_image.jpg" alt="Кофе" loading="lazy" />
+      </div>
+      <div class="gallery__item">
+        <img src="img/013_image.jpg" alt="Зёрна" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       MENU SECTION
+  ============================================= -->
+  <section class="section menu" id="menu">
+    <div class="menu__header">
+      <div>
+        <span class="section__eyebrow reveal">Меню</span>
+        <h2 class="section__title reveal reveal-delay-1" style="margin-bottom:0">
+          Наши <em>напитки</em>
+        </h2>
+      </div>
+      <!-- Кнопка скачать PDF -->
+      <a href="#" class="menu__pdf-btn reveal">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <path d="M10 3v10M6 9l4 4 4-4M4 17h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="menu__pdf-content">
+          <span class="menu__pdf-main">Меню кухни</span>
+          <span class="menu__pdf-sub">Скачать PDF</span>
+        </span>
+      </a>
+    </div>
+
+    <!-- Сетка меню — 8 карточек -->
+    <div class="menu__grid">
+
+      <article class="menu-card reveal">
+        <img class="menu-card__img"
+          src="img/014_image.jpg"
+          alt="Двойной эспрессо" loading="lazy" />
+        <div class="menu-card__body">
+          <span class="menu-card__tag">Классика</span>
+          <h3 class="menu-card__name">Двойной эспрессо</h3>
+          <p class="menu-card__desc">Насыщенный, бархатистый, с нотами тёмного шоколада и специй. Обжарка medium-dark.</p>
+          <div class="menu-card__footer">
+            <span class="menu-card__price">350₽</span>
+            <div class="menu-card__order">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="menu-card reveal reveal-delay-1">
+        <img class="menu-card__img"
+          src="img/015_image.jpg"
+          alt="Капучино" loading="lazy" />
+        <div class="menu-card__body">
+          <span class="menu-card__tag">Популярное</span>
+          <h3 class="menu-card__name">Капучино</h3>
+          <p class="menu-card__desc">Бархатистая молочная пена, плотная текстура, идеальный баланс кофе и молока.</p>
+          <div class="menu-card__footer">
+            <span class="menu-card__price">420₽</span>
+            <div class="menu-card__order">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="menu-card reveal reveal-delay-2">
+        <img class="menu-card__img"
+          src="img/016_image.jpg"
+          alt="Карамельный макиато" loading="lazy" />
+        <div class="menu-card__body">
+          <span class="menu-card__tag">Новинка</span>
+          <h3 class="menu-card__name">Карамельный макиато</h3>
+          <p class="menu-card__desc">Карамельная сладость, обжаренный кофе и пена. Идеальный вкус для любителей сладкого.</p>
+          <div class="menu-card__footer">
+            <span class="menu-card__price">480₽</span>
+            <div class="menu-card__order">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="menu-card reveal reveal-delay-3">
+        <img class="menu-card__img"
+          src="img/017_image.jpg"
+          alt="Латте" loading="lazy" />
+        <div class="menu-card__body">
+          <span class="menu-card__tag">Классика</span>
+          <h3 class="menu-card__name">Латте</h3>
+          <p class="menu-card__desc">Мягкое молоко, деликатная пена и двойной шот эспрессо. Комфорт в каждом глотке.</p>
+          <div class="menu-card__footer">
+            <span class="menu-card__price">460₽</span>
+            <div class="menu-card__order">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="menu-card reveal">
+        <img class="menu-card__img"
+          src="img/018_image.png"
+          alt="Колд брю" loading="lazy" />
+        <div class="menu-card__body">
+          <span class="menu-card__tag">Летнее</span>
+          <h3 class="menu-card__name">Колд брю</h3>
+          <p class="menu-card__desc">18 часов холодного настаивания. Шелковистая текстура, сладкий финиш без горечи.</p>
+          <div class="menu-card__footer">
+            <span class="menu-card__price">550₽</span>
+            <div class="menu-card__order">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="menu-card reveal reveal-delay-1">
+        <img class="menu-card__img"
+          src="img/019_image.jpg"
+          alt="Флэт уайт" loading="lazy" />
+        <div class="menu-card__body">
+          <span class="menu-card__tag">Бариста выбор</span>
+          <h3 class="menu-card__name">Флэт уайт</h3>
+          <p class="menu-card__desc">Концентрированный ристретто на микропене. Для тех, кто ценит интенсивность.</p>
+          <div class="menu-card__footer">
+            <span class="menu-card__price">440₽</span>
+            <div class="menu-card__order">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="menu-card reveal reveal-delay-2">
+        <img class="menu-card__img"
+          src="img/020_image.jpg"
+          alt="Матча латте" loading="lazy" />
+        <div class="menu-card__body">
+          <span class="menu-card__tag">Альтернатива</span>
+          <h3 class="menu-card__name">Матча латте</h3>
+          <p class="menu-card__desc">Церемониальная матча первого урожая с кремовым молоком. Земля, умами, нежность.</p>
+          <div class="menu-card__footer">
+            <span class="menu-card__price">520₽</span>
+            <div class="menu-card__order">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="menu-card reveal reveal-delay-3">
+        <img class="menu-card__img"
+          src="img/021_image.jpg"
+          alt="Горячий шоколад" loading="lazy" />
+        <div class="menu-card__body">
+          <span class="menu-card__tag">Зимнее</span>
+          <h3 class="menu-card__name">Горячий шоколад</h3>
+          <p class="menu-card__desc">Валrhona 70%, растопленный в молоке. Глубина и бархат в каждой кружке.</p>
+          <div class="menu-card__footer">
+            <span class="menu-card__price">500₽</span>
+            <div class="menu-card__order">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- =============================================
+       BONUS SECTION
+  ============================================= -->
+  <section class="section bonus" id="bonus">
+    <div>
+      <p class="bonus__eyebrow reveal">Программа лояльности</p>
+      <h2 class="bonus__title reveal reveal-delay-1">
+        Станьте участником<br>бонусной программы
+      </h2>
+      <ul class="bonus__list">
+        <li class="bonus__list-item reveal reveal-delay-1">
+          <div class="bonus__check">
+            <svg viewBox="0 0 12 12" fill="none">
+              <path d="M2 6l3 3 5-5" stroke="#FFD700" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <span class="bonus__list-text">Накапливайте баллы с каждым заказом — 1 балл за каждый потраченный 1₽</span>
+        </li>
+        <li class="bonus__list-item reveal reveal-delay-2">
+          <div class="bonus__check">
+            <svg viewBox="0 0 12 12" fill="none">
+              <path d="M2 6l3 3 5-5" stroke="#FFD700" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <span class="bonus__list-text">Обменивайте баллы на бесплатные напитки и угощения</span>
+        </li>
+        <li class="bonus__list-item reveal reveal-delay-3">
+          <div class="bonus__check">
+            <svg viewBox="0 0 12 12" fill="none">
+              <path d="M2 6l3 3 5-5" stroke="#FFD700" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <span class="bonus__list-text">Эксклюзивные предложения и ранний доступ к новинкам меню</span>
+        </li>
+        <li class="bonus__list-item reveal reveal-delay-4">
+          <div class="bonus__check">
+            <svg viewBox="0 0 12 12" fill="none">
+              <path d="M2 6l3 3 5-5" stroke="#FFD700" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <span class="bonus__list-text">Поздравление и подарок в день рождения — от нашего сердца</span>
+        </li>
+      </ul>
+      <button class="btn-bonus reveal" id="openModal">
+        <span>Зарегистрировать бонусную карту</span>
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" style="position:relative;z-index:1">
+          <path d="M3 9h12M9 4l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="bonus__img-col reveal">
+      <div style="position:relative">
+        <img class="bonus__img"
+          src="img/022_image.jpg"
+          alt="Бонусная карта AROMA" loading="lazy" />
+        <div class="bonus__img-deco"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       МОДАЛЬНОЕ ОКНО — Бонусная программа
+  ============================================= -->
+  <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-label="Регистрация бонусной карты">
+    <div class="modal" id="modal">
+
+      <!-- Кнопка закрытия -->
+      <button class="modal__close" id="closeModal" aria-label="Закрыть">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path d="M1 1l12 12M13 1L1 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+      <!-- Левая часть — информация -->
+      <div class="modal__left">
+        <div>
+          <div class="modal__left-logo">AROMA<span>.</span></div>
+          <h3 class="modal__left-title">Присоединяйтесь<br>к нам!</h3>
+          <p class="modal__left-slogan">Каждый визит — шаг<br>к бесплатному кофе</p>
+        </div>
+        <div>
+          <ul class="modal__left-list">
+            <li>1 балл = 1₽ в нашей кофейне</li>
+            <li>50 баллов = бесплатный напиток</li>
+            <li>Двойные баллы по пятницам</li>
+            <li>Приветственный подарок при регистрации</li>
+          </ul>
+          <p class="modal__left-sign">— Команда AROMA.</p>
+        </div>
+      </div>
+
+      <!-- Правая часть — форма -->
+      <div class="modal__right">
+        <h4 class="modal__form-title">Начни копить</h4>
+        <p class="modal__form-sub">Введите номер телефона или войдите через мессенджер</p>
+
+        <label class="form__label" for="phoneInput">Номер телефона</label>
+        <input class="form__input" id="phoneInput" type="tel" placeholder="+7 (000) 000-00-00" />
+
+        <p class="form__social-label">— или войдите через —</p>
+        <div class="form__social-btns">
+          <button class="form__social-btn" type="button">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.6.113.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+            </svg>
+            Telegram
+          </button>
+          <button class="form__social-btn" type="button">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+            ВКонтакте
+          </button>
+        </div>
+
+        <label class="form__checkbox-wrap">
+          <input class="form__checkbox" type="checkbox" id="agreement" />
+          <span class="form__checkbox-text">
+            Я согласен(а) с <a href="#">условиями программы лояльности</a> и <a href="#">политикой конфиденциальности</a>
+          </span>
+        </label>
+
+        <button class="btn-submit" type="button">Получить код</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- =============================================
+       МОДАЛЬНОЕ ОКНО — Бронирование столика
+  ============================================= -->
+  <div class="modal-overlay" id="reservationOverlay" role="dialog" aria-modal="true" aria-label="Бронирование столика">
+    <div class="modal" id="reservationModal">
+
+      <!-- Кнопка закрытия -->
+      <button class="modal__close" id="closeReservation" aria-label="Закрыть">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path d="M1 1l12 12M13 1L1 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+      <!-- Левая часть — информация -->
+      <div class="modal__left">
+        <div>
+          <div class="modal__left-logo">AROMA<span>.</span></div>
+          <h3 class="modal__left-title">Забронировать<br>столик</h3>
+          <p class="modal__left-slogan">Хотите уточнить вопросы<br>или забронировать столик?</p>
+        </div>
+        <div>
+          <p class="modal__left-sign" style="font-size: 14px; line-height: 1.6;">
+            Заполните форму и мы вам перезвоним<br>в течении 10 минут
+          </p>
+          <p class="modal__left-sign">— Команда AROMA.</p>
+        </div>
+      </div>
+
+      <!-- Правая часть — форма -->
+      <div class="modal__right">
+        <h4 class="modal__form-title">Оставьте заявку</h4>
+        <p class="modal__form-sub">Мы перезвоним вам в течение 10 минут</p>
+
+        <label class="form__label" for="reserveName">Ваше имя</label>
+        <input class="form__input" id="reserveName" type="text" placeholder="Иван Иванов" />
+
+        <label class="form__label" for="reservePhone">Номер телефона</label>
+        <input class="form__input" id="reservePhone" type="tel" placeholder="+7 (000) 000-00-00" />
+
+        <label class="form__checkbox-wrap">
+          <input class="form__checkbox" type="checkbox" id="reservationAgreement" />
+          <span class="form__checkbox-text">
+            Я согласен(а) с <a href="#">политикой конфиденциальности</a>
+          </span>
+        </label>
+
+        <button class="btn-submit" type="button" id="submitReservation">Забронировать столик</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- =============================================
+       CONTACTS SECTION
+  ============================================= -->
+  <section class="contacts-section" id="contacts-section">
+    <div class="contacts-container">
+      <div class="contacts-map" id="yandex-map">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9a1f9ca6d87a532029275b7c23ac950b0baab3ac3167a57efddc5d8e9d98a216&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=true"></script>
+      </div>
+      <div class="contacts-info">
+        <div class="contacts-header">
+          <span class="section__eyebrow">Контакты</span>
+          <h2 class="section__title">
+            Найдите <em>нас</em>
+          </h2>
+          <p class="contacts-subtitle">Челябинск, пр-т Ленина, 58</p>
+        </div>
+
+        <div class="contacts-details">
+          <div class="contact-item">
+            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <div>
+              <div class="contact-label">Адрес</div>
+              <div class="contact-value">Челябинск, пр-т Ленина, 58</div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <div>
+              <div class="contact-label">Телефон</div>
+              <div class="contact-value">8 800 555-35-35</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contacts-socials">
+          <a href="#" class="social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Telegram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 2L11 13"></path>
+              <path d="M22 2L15 22L11 13L2 9L22 2Z"></path>
+            </svg>
+          </a>
+          <a href="#" class="social-link" aria-label="VKontakte">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M16.5 3C19.5376 3 22 5.46244 22 8.5V15.5C22 18.5376 19.5376 21 16.5 21H7.5C4.46244 21 2 18.5376 2 15.5V8.5C2 5.46244 4.46244 3 7.5 3H16.5Z"></path>
+              <path d="M8 10C8 10 7.5 11 9 12.5C10.5 14 12 14 12 14"></path>
+              <path d="M16 10C16 10 16.5 11 15 12.5C13.5 14 12 14 12 14"></path>
+            </svg>
+          </a>
+        </div>
+
+        <button class="btn-primary book-table-btn" id="bookTableBtn">
+          <span>Забронировать столик</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       FLOATING PHONE BUTTON
+  ============================================= -->
+  <button class="floating-phone" id="floatingPhone" aria-label="Позвонить">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+    </svg>
+  </button>
+
+  <!-- =============================================
+       FOOTER
+  ============================================= -->
+  <footer class="footer" id="contact">
+    <div class="footer__main">
+      <!-- Колонка 1: Логотип + описание + соцсети -->
+      <div>
+        <div class="footer__logo">AROMA<span>.</span></div>
+        <p class="footer__desc">
+          Specialty coffee в самом сердце города. Открыты ежедневно с 8:00 до 22:00. Ждём вас.
+        </p>
+        <div class="footer__socials">
+          <a href="#" class="footer__social" aria-label="Instagram">IG</a>
+          <a href="#" class="footer__social" aria-label="Telegram">TG</a>
+          <a href="#" class="footer__social" aria-label="VKontakte">VK</a>
+        </div>
+      </div>
+
+      <!-- Колонка 2: Навигация -->
+      <div>
+        <p class="footer__col-title">Навигация</p>
+        <nav class="footer__nav">
+          <a href="#">Главная</a>
+          <a href="#about">О нас</a>
+          <a href="#gallery">Галерея</a>
+          <a href="#menu">Меню</a>
+          <a href="#bonus">Бонусная программа</a>
+        </nav>
+      </div>
+
+      <!-- Колонка 3: Контакты -->
+      <div>
+        <p class="footer__col-title">Контакты</p>
+        <div class="footer__contacts">
+          <div class="footer__contact-item">
+            <span class="footer__contact-label">Адрес</span>
+            <span class="footer__contact-value">Челябинск, пр-т Ленина, 58</span>
+          </div>
+          <div class="footer__contact-item">
+            <span class="footer__contact-label">Телефон</span>
+            <span class="footer__contact-value">8 800 555-35-35</span>
+          </div>
+          <div class="footer__contact-item">
+            <span class="footer__contact-label">Email</span>
+            <span class="footer__contact-value">hello@aroma.coffee</span>
+          </div>
+          <div class="footer__contact-item">
+            <span class="footer__contact-label">Время работы</span>
+            <span class="footer__contact-value">Пн–Вс: 08:00 — 22:00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Нижняя строка -->
+    <div class="footer__bottom">
+      <p class="footer__copy">© 2024 <span>AROMA.</span> Все права защищены.</p>
+      <p class="footer__copy">Сделано с <span>♥</span> для любителей кофе</p>
+    </div>
+  </footer>
+
+  <!-- =============================================
+       JAVASCRIPT
+  ============================================= -->
+  <script src="js/main.js"></script>
+</body>
+</html>
